@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    /* overflow: hidden; */
+  }
+
+  header {
+    position: relative;
+    height: 700px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('img/videoDent.mp4') no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  /* Ajustar el estilo del video para que ocupe toda la pantalla */
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+  }
+
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+  }
+
+  nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+
+  .reserva-btn {
+    position: absolute;
+    bottom: 50px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(226, 56, 56);
+    border-radius: 15px;
+    font-weight: bold; 
+  }
+
+  .reserva-btn:hover {
+    background-color: rgb(166, 33, 33);
+    color: #fff !important
+  }
+
+  .navbar{
+    position: absolute;
+  }
+
+  .container {
+    margin-top: 20px; 
+  }
+
+
+  h1::after{
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Ajusta el valor según sea necesario */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px; /* Ancho de la línea */
+    height: 4px; /* Grosor de la línea */
+    background-color: red; /* Color de la línea */
+  }
+  /* fin del header y primera section */

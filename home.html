@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Encabezado Transparente con Bootstrap</title>
+  <!-- Enlace a la hoja de estilos de Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Encabezado con video de fondo -->
+  <header>
+    <video autoplay muted loop id="background-video">
+        <source src="video/video.mp4" type="video/mp4">
+    </video>
+  
+      <!-- Barra de navegación transparente -->
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Popovich Show</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse mr-5 ml-5" id="navbarNav" >
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Proximos Eventos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reserva</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  
+      <!-- Botón de reserva -->
+      <div class="reserva-btn">
+        <a href="#" class="btn btn-lg">Reservar</a>
+      </div>
+  </header>
+
+  <!-- quien es popovich -->
+  <section class="container mt-5">
+    <!-- Primera fila con un título -->
+    <div class="row">
+      <div class="col text-center">
+        <h1>¿Quién es Popovhich show?</h1>
+      </div>
+    </div>
+
+    <!-- Segunda fila con dos columnas -->
+    <div class="row mt-5">
+      <!-- Columna izquierda con título e introducción -->
+      <div class="col-md-6">
+        <h2>Descubre a Grigory Popovich</h2>
+        <p>
+            Popovhich es un espectáculo único y emocionante que presenta increíbles actuaciones de payasos, malabaristas y artistas circenses. Con un enfoque en la comedia y la habilidad, Popovhich ofrece un entretenimiento para toda la familia.
+          </p>
+          <p>
+            Con más de XX años de experiencia, Popovhich ha cautivado a audiencias en todo el mundo con su carisma y habilidades excepcionales. Desde números cómicos hasta impresionantes acrobacias, cada espectáculo es una experiencia inolvidable llena de risas y asombro.
+          </p>   
+         </div>
+
+      <!-- Columna derecha con video de YouTube -->
+      <div class="col-md-6">
+        <!-- Video con efecto lightbox -->
+        <a data-fslightbox="gallery" href="https://www.youtube.com/embed/zhr1RNUejSQ">
+            <img src="https://i.ytimg.com/vi/zhr1RNUejSQ/maxresdefault.jpg" alt="" style="height: 300px; width: 500px;">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- Scripts de Bootstrap (jQuery y Popper.js necesarios) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="./js/fslightbox.js"></script>
+</body>
+</html>
